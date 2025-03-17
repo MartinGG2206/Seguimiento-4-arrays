@@ -35,11 +35,11 @@ const procesarPago = (codigoProducto) => {
     }
     if (cantidad[index] === 0) {
         let sugerencia = sugerirProducto();
-        alert("El producto " + productos[index] + " esta agotado. Pruebe con el codigo " + sugerencia + ".");
+        alert("El producto " + productos[index] + " esta agotado. Pruebe con el codigo " + sugerencia );
         return false;
     }
     cantidad[index]--;
-    alert("Pago exitoso, aqui tiene su " + productos[index] + ".");
+    alert("Pago exitoso, aqui tiene su " + productos[index]);
     return true;
 };
 
