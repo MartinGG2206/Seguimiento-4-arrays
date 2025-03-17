@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hola.css">
+    <script>
+        function cargarScript(scriptName) {
+            let script = document.createElement("script");
+            script.src = scriptName;
+            script.type = "text/javascript";
+            document.body.appendChild(script);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="cargarScript('ejercicio1.js')">Habitaciones de Hotel</button>
+    <button onclick="cargarScript('ejercicio2.js')">Cajero Automatico</button>
+    <button onclick="cargarScript('ejercicio3.js')">Cola de Supermercado</button>
+    <button onclick="cargarScript('ejercicio4.js')">Maquina expendedora</button> 
+</body>
+</html>
